@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 
 typedef char Datatype_h; // Typedef char for datatype, demonstrate extensibility of C
 
@@ -13,12 +15,35 @@ void insertHeap(HN **heap, HN *newNode);
 HN *removeHeap(HN **heap);
 HN *getNewNode(Datatype_h* word, int size);
 
-
+HN *readFile(const char* filename);
 
 int main() {
-    printf("Hello, World!\n");
+    readFile("/Users/haydenroszell/Documents/School/College/ERAU/Sophomore/sem2/CS332/FinalProject/C_Heap/text.txt");
     return 0;
 }
+
+HN *readFile(const char* filename) {
+    Datatype_h letter[1024];
+    FILE* fp = fopen(filename, "r");
+    if (fp == NULL) {
+        perror(filename);
+        return NULL;
+    }
+
+    while (fscanf(fp, " %1023s", letter) == 1) {
+        int i = 0, j = 0, len = 0;
+        for (i = 0, j = 0, len = (int)strlen(letter); i < len; i++) {
+            if (!ispunct(letter[i])) {
+                letter[j] = tolower(letter[i]);
+                j++;
+            }
+        }
+        letter[j] = '\0';
+        puts(letter);
+    }
+    return NULL;
+}
+
 
 void insertHeap(HN **heap, HN *newNode) {
     HN *node = newNode;
