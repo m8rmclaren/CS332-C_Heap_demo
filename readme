@@ -3,7 +3,7 @@ File: readme
 Purpose: Share some information regarding the project code
 ----------------------------------------------------------
 
-Interpreting Current Code: 
+Regarding Current Ada Code: 
 - MOST IMPORTANTLY: I have NOT tested any of this code and am not sure if it is correct or even in the right direction.
 -- Thus, don't assume my implementations are correct; feel free to overwrite them
 
@@ -17,7 +17,7 @@ Interpreting Current Code:
 -- We may end up making some changes to Hayden's C code, but let's worry about getting a grasp on Ada first
 
 
-Compiling and Running (on prclab1):
+Compiling and Running Ada Programs (on prclab1):
 - To compile the Ada code, use command: gnatmake main.adb
 -- This will detect and compile the other files based on the "with Ada_Heapsort;" include at the beginning of main.adb
 
@@ -27,5 +27,11 @@ Compiling and Running (on prclab1):
 - There's probably a nice debug tool somewhere, but I haven't gotten that far...
 -- The gnatmake errors are pretty useless, and you only get one error per compile attempt
 --- (not like gcc or G++ where you can get a broad idea of multiple issues and fix them simultaneously)
+
+Regarding Current C Code:
+- I uploaded my CS315 heapsort solution (cvoHW5.c) as an alternative look into the same algorithm Hayden has in main.c
+-- This might give us some insight on how to work with the Ada program, or perhaps to make some changes to both the C and Ada programs.
+--- My solution relies heavily on recursion, with the bubbleUp and bubbleDown functions being called by insertNode and removeNode functions;
+---- alternatively, Hayden's solution does the algorithmic math directly within those functions - same result, but different methodology.
 
 Please feel free to add to this readme as a more detailed log than commit comments. We should all check this before we start to work on the program, each time.
