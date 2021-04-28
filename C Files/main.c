@@ -27,7 +27,7 @@ void siftDown(HEAP *h, int parent);
 HN *removeNode(HEAP *h);
 
 #define MAXSIZE 10000
-#define FILE_PATH "/Users/haydenroszell/Documents/School/College/ERAU/Sophomore/sem2/CS332/FinalProject/C_Heap/text.txt"
+#define FILE_PATH "/Users/haydenroszell/Documents/School/College/ERAU/Sophomore/sem2/CS332/C_HeapSort_GitHub/C Files/text.txt"
 int main() {
     FILE* fp = fopen(FILE_PATH, "r");
     if (fp == NULL) {
