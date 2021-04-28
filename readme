@@ -1,0 +1,31 @@
+Author: Colton Van Orsdel
+File: readme
+Purpose: Share some information regarding the project code
+----------------------------------------------------------
+
+Interpreting Current Code: 
+- MOST IMPORTANTLY: I have NOT tested any of this code and am not sure if it is correct or even in the right direction.
+-- Thus, don't assume my implementations are correct; feel free to overwrite them
+
+- I did what I could to comment non-obvious lines (and some obvious ones, too), but it'll take a bit to grasp the syntax similarities to C
+-- Please also comment any additions you may so that it is easy for me to catch up
+
+- Check the references listed in main.adb to see what I was using (documentation is not great, and I didn't find any decent example code)
+-- Please add to the references list as you go along! It'd be a big help if we all remain on the same page
+
+- Keep in mind that I'm trying to mirror Hayden's main.c implementation as closely as possible, hence the similarities in code layout and variable naming
+-- We may end up making some changes to Hayden's C code, but let's worry about getting a grasp on Ada first
+
+
+Compiling and Running (on prclab1):
+- To compile the Ada code, use command: gnatmake main.adb
+-- This will detect and compile the other files based on the "with Ada_Heapsort;" include at the beginning of main.adb
+
+- To clean up the compiled files, use command: gnatclean -c main.adb
+-- You can also run: gnatclean		to see a list of options
+
+- There's probably a nice debug tool somewhere, but I haven't gotten that far...
+-- The gnatmake errors are pretty useless, and you only get one error per compile attempt
+--- (not like gcc or G++ where you can get a broad idea of multiple issues and fix them simultaneously)
+
+Please feel free to add to this readme as a more detailed log than commit comments. We should all check this before we start to work on the program, each time.
