@@ -17,12 +17,16 @@
 --		       -- Very relevant, since we do a lot with pointers in a heapsort algorithm.
 -----------------------------------------------------------------
 with Ada.Integer_Text_IO; -- again, not yet sure what this includes, but better safe than sorry!
+with Ada.Text_IO;
 with Ada_Heapsort; -- includes our .h and .adb (I think it's both?) for use in the Main procedure
 
-procedure Main is
+procedure Main
+is
+begin
 -- we do some things with our function procedures and packages here...
 
-begin
+    Ada.Text_IO.Put_Line ("Hello World!");
+
 -- this is where we actually start to call functions and make things happen
 
 end Main;
