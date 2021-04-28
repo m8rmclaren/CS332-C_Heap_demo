@@ -8,13 +8,13 @@ Regarding Current Ada Code:
 -- Thus, don't assume my implementations are correct; feel free to overwrite them
 
 - I did what I could to comment non-obvious lines (and some obvious ones, too), but it'll take a bit to grasp the syntax similarities to C
--- Please also comment any additions you may so that it is easy for me to catch up
+-- Please also comment any additions you make so that it is easy for me to catch up
 
 - Check the references listed in main.adb to see what I was using (documentation is not great, and I didn't find any decent example code)
 -- Please add to the references list as you go along! It'd be a big help if we all remain on the same page
 
 - Keep in mind that I'm trying to mirror Hayden's main.c implementation as closely as possible, hence the similarities in code layout and variable naming
--- We may end up making some changes to Hayden's C code, but let's worry about getting a grasp on Ada first
+-- We may end up making some changes to Hayden's C code or how directly the Ada version mirrors it, but let's worry about getting a grasp on Ada first
 
 
 Compiling and Running Ada Programs (on prclab1):
