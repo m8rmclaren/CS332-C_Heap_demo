@@ -11,7 +11,6 @@ package Ada_Heapsort is
 	type Data_Type is private; -- we just declare everything as private in the public section here, then define them all in the private section below
 	type Index_Type is private;
 	type Heap_Array_Type is private;
-	type Datatype_h is String;
 
 	-- Think of the below statements as our "function prototypes", as this is the equivalent of a ".h" file in C
 	procedure Insert_Heap(Heap: Heap_Node_Type'; New_Node: Heap_Node_Type') -- ' denotes pointers of these types
@@ -20,32 +19,27 @@ package Ada_Heapsort is
 	-- Note that Data_Element_Size is not a good name for our integer test case; it is just the "priority" of the associated Data_Element for sorting purposes. 
 	-- continued from above: In CS315, the equivalent to "size" was "freq", for the frequency of the character being entered into the Huffman tree
 
-    --HEAP *constructHeapFromFP(FILE *fp);
-    --void deconstructHeap(HEAP *heap);
+    function constructHeapFromFile () return LittleEndUpHeap;
+    procedure deconstructHeap (heap : LittleEndUpHeap);
 
-    --HN *getNewNode(Datatype_h *word, int size);
-    --HEAP *createHeap();
-    --void insertNode(HEAP *h, HN *newNode);
-    --void bubbleUp(HEAP *h, int theIndex);
-    --void siftDown(HEAP *h, int parent);
-    --HN *removeNode(HEAP *h);
+private
+	function getNewNode (word : String; size : Integer) return Heap_Node;
+    function createHeap () return LittleEndUpHeap;
+    procedure insertNode (heap : LittleEndUpHeap; newNode : Heap_Node);
+    procedure bubbleUp (heap : LittleEndUpHeap; theIndex : Integer);
+    procedure siftDown (heap : LittleEndUpHeap; parent : Integer);
+    function removeNode (heap : LittleEndUpHeap) return Heap_Node;
 
-    function getNewNode(word : Datatype_h; size : Integer) return heap_node;
-    function createHeap() return littleEndUp;
-    procedure insertNode(heap : littleEndUpHeap; )
-
-	type heap_node is record
-	    word : Datatype_h;
-	    size : Integer;
+    type Heap_Node is record
+        word : String;
+        size : Integer;
     end record;
 
-    type littleEndUpHeap is record
-        theHeap : heap_node;
+    type LittleEndUpHeap is record
+        theHeap : Heap_Node;
         count : Integer;
     end record;
 
-private
-	
 	type Data_Type is Integer; -- working with integers as our data type for testing purposes; will eventually be chars
 	type Index_Type is Integer; -- just the index for manuevering through both the heap and the array; will likely remain as integer
 	type Heap_Node_Type is record -- this is essentially the equivalent of a struct in C
