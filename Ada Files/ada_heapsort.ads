@@ -8,25 +8,23 @@
 with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
 package Ada_Heapsort is
-	MAXSIZE : constant Integer := 100;
-	File_Name : constant String := "/home/students/vanorsdc/CS332 Final Project/AdaProgram/test_text.txt"; 
+	MAXSIZE : constant Integer := 10000;
+	File_Name : constant String := "/home/hroszell/school/project/text.txt";
 
 	type Heap_Node is record
         word : Unbounded_String;
         size : Integer;
     end record;
 
-	type Heap is array (1 .. MAXSIZE) of Heap_Node;
+	type Heap is array (0 .. MAXSIZE) of Heap_Node;
 
     type LittleEndUpHeap is record
         theHeap : Heap;
         count : Integer;
     end record;
 
-    function constructHeapFromFile return LittleEndUpHeap;
-    -- procedure deconstructHeap (heap : LittleEndUpHeap);
-
-privateI'
+    function ConstructHeapFromFile return LittleEndUpHeap;
+    procedure DeconstructHeap (heap : in out LittleEndUpHeap);
 
 	function GetNewNode (word : Unbounded_String; size : Integer) return Heap_Node;
     function CreateHeap return LittleEndUpHeap;

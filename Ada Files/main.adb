@@ -32,8 +32,8 @@ begin
 -- we do some things with our function procedures and packages here...
 
     Ada.Text_IO.Put_Line ("Hello World!");
-    heap := Ada_Heapsort.constructHeapFromFile;
-
+    heap := Ada_Heapsort.ConstructHeapFromFile;
+    Ada_Heapsort.DeconstructHeap(heap);
 -- this is where we actually start to call functions and make things happen
 
 end Main;

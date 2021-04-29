@@ -84,6 +84,8 @@ package body Ada_Heapsort is
 	begin
 		if heap.count = 1 then
 			Ada.Text_IO.Put_Line ("Cannot remove - heap is empty!");
+			removedNode.word := Ada.Strings.Unbounded.To_Unbounded_String("");
+			removedNode.size := 0;
 			return removedNode;
 		end if;
 
@@ -96,22 +98,31 @@ package body Ada_Heapsort is
 		return removedNode;
 	end RemoveNode;
 
-	function constructHeapFromFile return LittleEndUpHeap is
+	function ConstructHeapFromFile return LittleEndUpHeap is
 		F : File_Type;
 		heap : LittleEndUpHeap := CreateHeap;
 	begin
 		Open (F, In_File, File_Name);
 		while not End_Of_File (F) loop
             declare
-                word : Unbounded_String := Get_Line (F);
-                newNode : Heap_Node := GetNewNode (word, length(word));
+                word : String := Get_Line (F);
+				word_t : Unbounded_String := Ada.Strings.Unbounded.To_Unbounded_String(word);
+                newNode : Heap_Node := GetNewNode (word_t, length(word_t));
             begin
-                Put_Line (word);
                 InsertNode (heap, newNode);
             end;
         end loop;
-
+		Close (F);
 		return heap;
 	end constructHeapFromFile;
+
+	procedure DeconstructHeap (heap : in out LittleEndUpHeap) is
+		temp : Heap_Node;
+	begin
+	   while heap.count > 1 loop
+			temp := RemoveNode(heap);
+			Put_Line (temp.word);
+	   end loop;
+	end deconstructHeap;
 
 end Ada_Heapsort;
