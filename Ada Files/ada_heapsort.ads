@@ -5,14 +5,15 @@
 -- 			the background code (variables, function prototypes,
 --			stucture declarations, etc.) for use in main
 -----------------------------------------------------------------
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 package Ada_Heapsort is
 	MAXSIZE : constant Integer := 100;
 	File_Name : constant String := "/home/hroszell/school/project/text.txt";
 
 	type Heap_Node is record
-        word : String (1 .. 20);
-        size : Integer;
-    end record;
+		word : String (1 .. 20);
+		size : Integer;
+	end record;
 
 	type Heap is array (1 .. MAXSIZE) of Heap_Node;
 
