@@ -10,7 +10,7 @@
 #include <string.h>
 
 typedef char Datatype_h; // Typedef char for datatype, demonstrate extensibility of C
-#define FILE_PATH "/Users/haydenroszell/Documents/School/College/ERAU/Sophomore/sem2/CS332/C_HeapSort_GitHub/C Files/clean_text.txt"
+#define FILE_PATH "/home/students/vanorsdc/CS332 Final Project/CProgram/clean_text.txt"
 
 void cleanTextFile() {
     FILE* fp = fopen(FILE_PATH, "r");
