@@ -6,7 +6,8 @@
 --			stucture declarations, etc.) for use in main
 -----------------------------------------------------------------
 package Ada_Heapsort is
-	MAXSIZE : constant := 100;
+	MAXSIZE : constant Integer := 100;
+	File_Name : constant String := "/home/hroszell/school/project/text.txt";
 
 	type Heap_Node is record
         word : String (1 .. 20);
@@ -20,7 +21,7 @@ package Ada_Heapsort is
         count : Integer;
     end record;
 
-    -- function constructHeapFromFile return LittleEndUpHeap;
+    function constructHeapFromFile return LittleEndUpHeap;
     -- procedure deconstructHeap (heap : LittleEndUpHeap);
 
 private

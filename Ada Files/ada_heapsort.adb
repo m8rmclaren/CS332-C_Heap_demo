@@ -4,7 +4,7 @@
 -- Purpose: Similar to a function's ".c" file in C, to consolidate
 -- 			the primary working function code for use in our main
 -----------------------------------------------------------------
-with Ada.Text_IO, Ada.Integer_Text_IO; -- not yet sure what these include, got them from Dr. Van Hilst's videos
+with Ada.Text_IO; use Ada.Text_IO;
 
 package body Ada_Heapsort is
 
@@ -93,5 +93,23 @@ package body Ada_Heapsort is
 
 		return removedNode;
 	end RemoveNode;
+
+	function constructHeapFromFile return LittleEndUpHeap is
+		F : File_Type;
+		heap : LittleEndUpHeap := CreateHeap;
+	begin
+		Open (F, In_File, File_Name);
+		while not End_Of_File (F) loop
+			declare
+				word : String := Get_Line (F);
+				--newNode : Heap_Node := GetNewNode (word, word'length);
+			begin
+				Put_Line (word);
+				--InsertNode (heap, newNode);
+			end;
+		end loop;
+
+		return heap;
+	end constructHeapFromFile;
 
 end Ada_Heapsort;

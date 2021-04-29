@@ -44,7 +44,7 @@ int main() {
 void deconstructHeap(HEAP *heap) {
     while (heap->count > 1) {
         HN* temp = removeNode(heap);
-        printf("%d: %s\n", temp->size, temp->word);
+        //printf("%s\n", temp->word);
     }
 }
 
@@ -62,6 +62,7 @@ HEAP *constructHeapFromFP(FILE *fp) {
         }
         letter[j] = '\0';
         if (j > 0) {
+            printf("%s\n", letter);
             insertNode(heap, getNewNode(letter, j));
         }
     }
