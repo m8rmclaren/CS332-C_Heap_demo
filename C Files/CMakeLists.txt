@@ -3,4 +3,4 @@ project(C_Heap C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(C_Heap main.c)
+add_executable(C_Heap main.c clean.h)

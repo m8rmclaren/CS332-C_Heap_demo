@@ -15,6 +15,7 @@ typedef struct littleEndUpHeap{
     HN *theHeap; // heap array to store HN data
     int count; // current size of HN 
 }	HEAP;
+void cleanTextFile();
 
 HEAP *constructHeapFromFP(FILE *fp);
 void deconstructHeap(HEAP *heap);
@@ -27,7 +28,7 @@ void siftDown(HEAP *h, int parent);
 HN *removeNode(HEAP *h);
 
 #define MAXSIZE 10000
-#define FILE_PATH "/Users/haydenroszell/Documents/School/College/ERAU/Sophomore/sem2/CS332/C_HeapSort_GitHub/C Files/text.txt"
+#define FILE_PATH "/Users/haydenroszell/Documents/School/College/ERAU/Sophomore/sem2/CS332/C_HeapSort_GitHub/C Files/clean_text.txt"
 int main() {
     FILE* fp = fopen(FILE_PATH, "r");
     if (fp == NULL) {
@@ -44,7 +45,7 @@ int main() {
 void deconstructHeap(HEAP *heap) {
     while (heap->count > 1) {
         HN* temp = removeNode(heap);
-        //printf("%s\n", temp->word);
+        printf("%d %s\n",temp->size, temp->word);
     }
 }
 
@@ -53,18 +54,9 @@ HEAP *constructHeapFromFP(FILE *fp) {
     HEAP* heap = createHeap();
 
     while (fscanf(fp, " %1023s", letter) == 1) {
-        int i, j, len;
-        for (i = 0, j = 0, len = (int) strlen(letter); i < len; i++) {
-            if (!ispunct(letter[i])) {
-                letter[j] = tolower(letter[i]);
-                j++;
-            }
-        }
-        letter[j] = '\0';
-        if (j > 0) {
-            printf("%s\n", letter);
-            insertNode(heap, getNewNode(letter, j));
-        }
+        int i;
+        for (i = 0; letter[i] != '\0'; i++);
+        insertNode(heap, getNewNode(letter, i));
     }
     return heap;
 }
@@ -161,4 +153,27 @@ HN *removeNode(HEAP *h)
     siftDown(h, 1); // recursive call until heap properties are met
 
     return removedNode;
+}
+
+void cleanTextFile() {
+    FILE* fp = fopen(FILE_PATH, "r");
+    if (fp == NULL) {
+        perror(FILE_PATH);
+        return;
+    }
+    Datatype_h letter[1024];
+    while (fscanf(fp, " %1023s", letter) == 1) {
+        int i, j, len;
+        for (i = 0, j = 0, len = (int) strlen(letter); i < len; i++) {
+            if (!ispunct(letter[i])) {
+                letter[j] = tolower(letter[i]);
+                j++;
+            }
+        }
+        letter[j] = '\0';
+        if (j > 0) {
+            printf("%s\n", letter);
+        }
+    }
+    fclose(fp);
 }
