@@ -15,9 +15,13 @@
 --		       -- This is the Ada2012 reference manual; helps to understand functions from other examples.
 -- 			   https://rosettacode.org/wiki/Pointers_and_references#Pointers
 --		       -- Very relevant, since we do a lot with pointers in a heapsort algorithm.
+--			   -- https://www.adacore.com/uploads/books/pdf/Ada_For_The_Embedded_C_Developer_2021-02.pdf
+--			   -- Hayden's book on Ada
 -----------------------------------------------------------------
 with Ada.Integer_Text_IO; -- again, not yet sure what this includes, but better safe than sorry!
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
 with Ada_Heapsort; use Ada_Heapsort; -- includes our .h and .adb (I think it's both?) for use in the Main procedure
 
 procedure Main

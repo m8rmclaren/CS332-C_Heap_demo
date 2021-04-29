@@ -5,12 +5,14 @@
 -- 			the background code (variables, function prototypes,
 --			stucture declarations, etc.) for use in main
 -----------------------------------------------------------------
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
 package Ada_Heapsort is
 	MAXSIZE : constant Integer := 100;
-	File_Name : constant String := "/home/hroszell/school/project/text.txt";
+	File_Name : constant String := "/home/students/vanorsdc/CS332 Final Project/AdaProgram/test_text.txt"; 
 
 	type Heap_Node is record
-        word : String (1 .. 20);
+        word : Unbounded_String;
         size : Integer;
     end record;
 
@@ -24,9 +26,9 @@ package Ada_Heapsort is
     function constructHeapFromFile return LittleEndUpHeap;
     -- procedure deconstructHeap (heap : LittleEndUpHeap);
 
-private
+privateI'
 
-	function GetNewNode (word : String; size : Integer) return Heap_Node;
+	function GetNewNode (word : Unbounded_String; size : Integer) return Heap_Node;
     function CreateHeap return LittleEndUpHeap;
     procedure InsertNode (heap : in out LittleEndUpHeap; newNode : in out Heap_Node);
     procedure BubbleUp (heap : in out LittleEndUpHeap; theIndex : Integer);

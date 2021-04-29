@@ -5,10 +5,12 @@
 -- 			the primary working function code for use in our main
 -----------------------------------------------------------------
 with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
+with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
 
 package body Ada_Heapsort is
 
-	function GetNewNode (word : String; size : Integer) return Heap_Node is
+	function GetNewNode (word : Unbounded_String; size : Integer) return Heap_Node is
 		temp : Heap_Node;
 	begin
 	   temp.word := word;
@@ -100,14 +102,14 @@ package body Ada_Heapsort is
 	begin
 		Open (F, In_File, File_Name);
 		while not End_Of_File (F) loop
-			declare
-				word : String := Get_Line (F);
-				--newNode : Heap_Node := GetNewNode (word, word'length);
-			begin
-				Put_Line (word);
-				--InsertNode (heap, newNode);
-			end;
-		end loop;
+            declare
+                word : Unbounded_String := Get_Line (F);
+                newNode : Heap_Node := GetNewNode (word, length(word));
+            begin
+                Put_Line (word);
+                InsertNode (heap, newNode);
+            end;
+        end loop;
 
 		return heap;
 	end constructHeapFromFile;
