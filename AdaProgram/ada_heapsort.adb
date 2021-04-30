@@ -117,7 +117,7 @@ package body Ada_Heapsort is
 	begin
 	   while heap.count > 1 loop -- as long as heap is not empty
 			temp := RemoveNode(heap); -- perform removal from heap, storing removed nodes in temp
-			Put_Line (Integer'Image(temp.size) & " : " & temp.word); -- print sorted data in format of "size : word"
+			Put_Line (Integer'Image(temp.size) & " " & temp.word); -- print sorted data in format of "size : word"
 	   end loop;
 	end deconstructHeap;
 

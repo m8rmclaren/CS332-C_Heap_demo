@@ -10,7 +10,7 @@ with Ada.Strings.Unbounded; use Ada.Strings.Unbounded;
 with Ada.Strings.Unbounded.Text_IO; use Ada.Strings.Unbounded.Text_IO;
 package Ada_Heapsort is
 	MAXSIZE : constant Integer := 10000;
-	File_Name : constant String := "/home/students/vanorsdc/CS332 Final Project/AdaProgram/test_text.txt";
+	File_Name : constant String := "/home/students/vanorsdc/CS332 Final Project/AdaProgram/clean_text.txt";
 
 	type Heap_Node is record
         word : Unbounded_String;

@@ -58,7 +58,7 @@ yellow
 black
 yellow
 black
-ooh
+coh
 black
 and
 yellow
@@ -72,7 +72,7 @@ barry
 breakfast
 is
 ready
-ooming
+coming
 hang
 on
 a
@@ -80,7 +80,7 @@ second
 hello
 barry
 adam
-oan
+can
 you
 believe
 this
@@ -300,7 +300,7 @@ buzzwell
 welcome
 new
 hive
-oity
+city
 graduating
 class
 of
@@ -486,7 +486,7 @@ what
 does
 that
 do
-oatches
+catches
 that
 little
 strand
@@ -501,7 +501,7 @@ it
 saves
 us
 millions
-oan
+can
 anyone
 work
 on
@@ -690,7 +690,7 @@ approach
 wait
 a
 second
-oheck
+check
 it
 out
 hey
@@ -826,7 +826,7 @@ look
 at
 these
 two
-oouple
+couple
 of
 hive
 harrys
@@ -1161,7 +1161,7 @@ today
 todays
 the
 day
-oome
+come
 on
 all
 the
@@ -1194,7 +1194,7 @@ one
 of
 thems
 yours
-oongratulations
+congratulations
 step
 to
 the
@@ -1207,7 +1207,7 @@ crud
 out
 stellar
 wow
-oouple
+couple
 of
 newbies
 yes
@@ -1687,7 +1687,7 @@ more
 honey
 for
 us
-oool
+cool
 im
 picking
 up
@@ -1696,14 +1696,14 @@ lot
 of
 bright
 yellow
-oould
+could
 be
 daisies
 dont
 we
 need
 those
-oopy
+copy
 that
 visual
 wait
@@ -1758,8 +1758,8 @@ like
 it
 yeah
 fuzzy
-ohemicaly
-oareful
+chemicaly
+careful
 guys
 its
 a
@@ -1770,7 +1770,7 @@ sweet
 lord
 of
 bees
-oandybrain
+candybrain
 get
 off
 there
@@ -1795,7 +1795,7 @@ out
 of
 position
 rookie
-ooming
+coming
 in
 at
 you
@@ -1889,15 +1889,15 @@ i
 gotta
 get
 home
-oant
+cant
 fly
 in
 rain
-oant
+cant
 fly
 in
 rain
-oant
+cant
 fly
 in
 rain
@@ -1920,7 +1920,7 @@ close
 the
 window
 please
-oheck
+check
 out
 my
 new
@@ -2239,7 +2239,7 @@ i
 cant
 do
 it
-oome
+come
 on
 no
 yes
@@ -2430,7 +2430,7 @@ to
 deal
 with
 anyway
-oan
+can
 i
 get
 you
@@ -2445,7 +2445,7 @@ mean
 i
 dont
 know
-ooffee
+coffee
 i
 dont
 want
@@ -2488,7 +2488,7 @@ some
 no
 i
 cant
-oome
+come
 on
 im
 trying
@@ -2750,7 +2750,7 @@ my
 life
 are
 you
-oan
+can
 i
 take
 a
@@ -3066,7 +3066,7 @@ you
 know
 what
 a
-oinnabon
+cinnabon
 is
 no
 its
@@ -3533,7 +3533,7 @@ did
 this
 get
 here
-oute
+cute
 bee
 golden
 blossom
@@ -3767,7 +3767,7 @@ comes
 from
 honey
 farms
-orazy
+crazy
 person
 what
 horrible
@@ -3895,7 +3895,7 @@ news
 in
 washington
 im
-oarl
+carl
 kasell
 but
 dont
@@ -4093,7 +4093,7 @@ they
 are
 pinheads
 pinhead
-oheck
+check
 out
 the
 new
@@ -4460,7 +4460,7 @@ buzz
 larvi
 and
 jeanette
-ohung
+chung
 good
 evening
 im
@@ -4469,7 +4469,7 @@ bumble
 and
 im
 jeanette
-ohung
+chung
 a
 tricounty
 bee
@@ -4511,7 +4511,7 @@ discussing
 their
 new
 book
-olassy
+classy
 ladies
 out
 this
@@ -4550,7 +4550,7 @@ world
 what
 about
 bee
-oolumbus
+columbus
 bee
 gandhi
 bejesus
@@ -5001,11 +5001,11 @@ bumbleton
 presiding
 all
 right
-oase
+case
 number
 4475
 superior
-oourt
+court
 of
 new
 york
@@ -5144,7 +5144,7 @@ laser
 beams
 robotics
 ventriloquism
-oloning
+cloning
 for
 all
 we
@@ -5249,7 +5249,7 @@ the
 time
 so
 nice
-oall
+call
 your
 first
 witness
@@ -5902,7 +5902,7 @@ ken
 im
 wearing
 a
-ohapstick
+chapstick
 hat
 this
 is
@@ -6527,7 +6527,7 @@ check
 out
 oh
 my
-oould
+could
 you
 get
 a
@@ -6943,7 +6943,7 @@ time
 27
 million
 years
-oongratulations
+congratulations
 on
 your
 victory
@@ -7057,7 +7057,7 @@ human
 teatime
 snack
 garnishments
-oant
+cant
 breathe
 bring
 it
@@ -7111,7 +7111,7 @@ do
 we
 do
 now
-oannonball
+cannonball
 were
 shutting
 honey
@@ -7519,14 +7519,14 @@ last
 parade
 maybe
 not
-oould
+could
 you
 ask
 him
 to
 slow
 down
-oould
+could
 you
 slow
 down
@@ -7646,7 +7646,7 @@ tournament
 of
 roses
 pasadena
-oalifornia
+california
 theyve
 got
 nothing
@@ -7834,7 +7834,7 @@ to
 do
 the
 job
-oan
+can
 you
 believe
 how
@@ -7864,7 +7864,7 @@ attention
 passengers
 this
 is
-oaptain
+captain
 scott
 we
 have
@@ -7908,7 +7908,7 @@ to
 them
 be
 careful
-oan
+can
 i
 get
 help
@@ -7929,7 +7929,7 @@ and
 ear
 hair
 trimmer
-oaptain
+captain
 im
 in
 a
@@ -8496,7 +8496,7 @@ it
 hold
 it
 why
-oome
+come
 on
 its
 my
@@ -8548,14 +8548,14 @@ i
 cant
 see
 anything
-oan
+can
 you
 no
 nothing
 its
 all
 cloudy
-oome
+come
 on
 you
 got
@@ -8628,7 +8628,7 @@ for
 the
 flower
 ok
-out
+cut
 the
 engines
 were
@@ -8756,7 +8756,7 @@ drop
 it
 in
 woman
-oome
+come
 on
 already
 barry
@@ -8935,7 +8935,7 @@ have
 a
 great
 afternoon
-oan
+can
 i
 help
 whos
@@ -9045,7 +9045,7 @@ youre
 a
 lifesaver
 barry
-oan
+can
 i
 help
 whos
@@ -9126,7 +9126,7 @@ sorry
 im
 sorry
 everyone
-oan
+can
 we
 stop
 here
@@ -9157,6 +9157,3 @@ no
 rehearsal
 for
 that
-its
-were
-theyre
