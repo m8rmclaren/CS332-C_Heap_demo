@@ -13,7 +13,7 @@
 #include <string.h>
 
 #define MAXSIZE 10000
-#define FILE_PATH "/home/students/vanorsdc/CS332 Final Project/CProgram/clean_text.txt"
+#define FILE_PATH "./clean_text.txt"
 
 typedef char Datatype_h; // Typedef char for datatype, demonstrate extensibility of C
 
