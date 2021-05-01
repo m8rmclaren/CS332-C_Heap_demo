@@ -5,7 +5,7 @@
 **********************************************************************/
 #include "c_heapsort.h"
 
-// Compile using: gcc -o c_heapsort main.c c_heapsort.c -I.
+// Compile using: gcc -std=c11 -o c_heapsort main.c c_heapsort.c -I.
 
 int main() {
     FILE* fp = fopen(FILE_PATH, "r");
