@@ -3,6 +3,7 @@
 // File:    cleanTextFile.h
 // Purpose: Reads in text from an input file and cleans it of all 
 //			capitalization, punctuation, and spaces for use in heapsort
+// Compile using: gcc -std=c11 -o cleanTextFile cleanTextFile.c -I.
 **********************************************************************/
 #include "cleanTextFile.h"
 

@@ -11,6 +11,7 @@ package body Ada_Heapsort is
 	begin
 	   temp.word := word; -- assign key (size) of new node to function parameter's input
 	   temp.size := size; -- assign data of new node to function parameter's input
+	   
 	   return temp;
 	end GetNewNode;
 
@@ -18,6 +19,7 @@ package body Ada_Heapsort is
 	   heap : LittleEndUpHeap;
 	begin
 	   heap.count := 1; -- initialize heap's array index to 1 (not 0!)
+
 	   return heap;
 	end CreateHeap;
 
@@ -25,7 +27,9 @@ package body Ada_Heapsort is
 	begin
 	   if heap.count < MAXSIZE then
 			heap.theHeap (heap.count) := newNode; -- insert new node into heap array
+
 			bubbleUp(heap, heap.count); -- sort until heap properties are met
+
 			heap.count := heap.count + 1; -- increment size of heap for indexing
 		end if;
 	end InsertNode;
@@ -98,7 +102,7 @@ package body Ada_Heapsort is
 		F : File_Type;
 		heap : LittleEndUpHeap := CreateHeap;
 	begin
-		Open (F, In_File, File_Name); -- open the input text file for reading
+		Open (F, In_File, FILE_PATH); -- open the input text file for reading
 		while not End_Of_File (F) loop -- while file hasn't been fully read
             declare
                 word : String := Get_Line (F); -- read in words from input text, one line at a time
