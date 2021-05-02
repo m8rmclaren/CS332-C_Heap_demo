@@ -12,8 +12,8 @@
 #include <ctype.h>
 #include <string.h>
 
-#define MAXSIZE 10000
-#define FILE_PATH "./clean_text.txt"
+#define MAXSIZE 10000000
+#define FILE_PATH "./dictionary_text.txt"
 
 typedef char Datatype_h; // Typedef char for datatype, demonstrate extensibility of C
 
