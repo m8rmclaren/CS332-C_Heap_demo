@@ -12,8 +12,8 @@
 
 typedef char Datatype_h; // Typedef char for datatype, demonstrate extensibility of C
 
-#define FILE_PATH_FROM "/home/students/vanorsdc/CS332 Final Project/CleanFunction/text.txt"
-#define FILE_PATH_TO "/home/students/vanorsdc/CS332 Final Project/CleanFunction/clean_text.txt"
+#define FILE_PATH_FROM "./text.txt"
+#define FILE_PATH_TO "./clean_text.txt"
 
 void cleanTextFile();
 
